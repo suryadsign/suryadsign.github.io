@@ -1,0 +1,2323 @@
+body{
+  margin:0px;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Satoshi', sans-serif;
+  font-family: 'Clash Grotesk', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Britney', cursive;
+  font-family: 'Comico', cursive;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #ffffff;
+}
+
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  margin: -60px;
+  border: 6px solid #7a7a7a;
+  border-radius:100px;
+  border-top: 6px solid black;
+  animation: spin 500ms linear infinite;
+}
+
+.loadtext{
+  position: absolute;
+  align-items: center;
+}
+
+@keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg);}
+}
+
+
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 500ms;
+  animation-name: animatebottom;
+  animation-duration: 500ms;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ left:-100px; opacity:0}
+  to{ left:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+}
+
+.hidden{
+  opacity:0;
+  transition: all 2s;
+  filter: blur(10px);
+  transform: translateY(100px);
+}
+
+.show{
+  opacity:1;
+  filter: blur(0px);
+  transform: translateY(0);
+  margin:20px 0;
+
+}
+
+.portfoliocard1:nth-child(1){
+  transition-delay: 200ms;
+}
+
+.alien{
+  margin-top: 30px;
+}
+
+
+.contain{
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: 'poppins',sans-serif;
+}
+
+.slide p{
+padding: 0 160px;
+font-size: 12px;
+}
+
+.quote-icon{
+width: 40px;
+height: auto;
+}
+
+
+.summary{
+  width: 80%;
+  margin:0 auto;
+display: flex;
+}
+
+.logodiv{
+  width: 30%;
+  text-align: left;
+  display: inline-flex;
+  }
+
+.menudiv{
+  left: 50%;
+  position: relative;
+  display: inline-flex;
+}
+
+.logo{
+  width:50px;
+}
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 200;
+  background-color: black;
+  cursor: pointer;
+  padding:6px 10px;
+  border-radius: 40px;
+  border:2px solid black;
+  animation-name: fadetop;
+  animation-duration: 2s;
+}
+
+@keyframes fadetop {
+  0% {opacity: 0;}
+  100% {opacity :1;}
+}
+
+
+#myBtn:hover {
+  background-color: black;
+}
+
+#myBtn img {
+  width:30px;
+  height:30px;
+  border-radius:30px;
+}
+
+
+
+/* Menu link */
+
+.sidebar {
+  margin-top: 0;
+  width: 100%;
+  padding: 20px 0px;
+  position: fixed;
+  animation-name: sidebar_d;
+  animation-duration: 1s;
+  overflow: auto;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(10.4px);
+  -webkit-backdrop-filter: blur(10.4px);
+}
+
+@keyframes sidebar_d {
+  0%  {top:-200px;}
+  100% {top:0px;}
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding:16px 30px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.sidebar a.active {
+  color: black;
+  border:2px solid #2d2d2d;
+  font-weight: bold;
+
+}
+
+.sidebar a:hover:not(.active) {
+  color: #2d2d2d;
+  opacity:50%;
+}
+
+
+
+a:link{
+  text-decoration: none;
+  color:black;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+a:visited{
+  text-decoration: none;
+  color:black;
+}
+
+a:active{
+  text-decoration: none;
+  color:#ff7ab1;
+}
+
+.menucollapsed
+{
+  text-decoration: none;
+  position: fixed;
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  font-size: 24px;
+  padding: 130px 80px 130px 80px;
+  overflow: auto;
+  background-color:white;
+  font-family: 'Philosopher', sans-serif;
+  clip: rect(0px,60px,200px,0px);
+}
+
+.backtoprofile{
+  fl}
+
+  .backtoprofile a{
+  }
+
+
+  /* Workspace edits */
+
+  .workspace {
+    width:100%;
+    margin-top:80px;
+    height:auto;
+    position:relative;
+    float: right;
+    animation-name: workspace;
+    animation-duration: 2s;
+    text-align: left;
+  }
+
+
+  .profile{
+    display: inline-flex;
+  }
+
+  .profileimage{
+    width:120px;
+    height: auto;
+    display: inline-block;
+    border-radius: 50%;
+
+  }
+
+  .profilesummary{
+    width:80%;
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  .experience-description{
+    font-size: 24px;
+    text-align: center;
+    margin:0px auto;
+  }
+
+  @keyframes workspace{
+    0% {bottom:-1000px;}
+    100% {bottom:0px;}
+  }
+
+  .heading-home{
+    width: 100%;
+    /* padding:200px 0 200px 0; */
+    position: relative;
+    display: inline-block;
+  }
+
+  #intro{
+    margin-top:60px;
+    height: auto;
+    padding:10px;
+    width:80%;
+    margin:0 auto;
+    text-align: center;
+  }
+
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(0%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .experiences-description{
+    font-size: 12px;
+    padding:0px;
+    line-height: 20px;
+    width:90%;
+    margin:10px 0;
+    text-align: left;
+    color:#ffffff;
+  }
+
+  .surya{
+    margin:10px 0 0 0;
+    font-weight:bold;
+    font-size:48px;
+    font-family: 'Comico', cursive;
+  }
+
+  /* Portfolio */
+
+  .image{
+    width:auto;
+    margin-bottom:0;
+    height:500px;
+    border-radius: 20px;
+  }
+
+  .image:hover{
+    transform: scale(105%);
+    transition: 1s;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .bannerimages{
+    width:80%;
+    padding-bottom:20px;
+    height: auto;
+  }
+
+  .portfolio{
+    height:500px;
+    width:100%;
+    margin: 20px 0;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .portimage{
+    display: inline-block;
+    width: 50%;
+    overflow:hidden;
+    text-align: right
+  }
+
+  .portsummary{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+  }
+
+  .portfoliocard1{
+    width:300px;
+    height:auto;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin:10px 10px;
+    position: relative;
+    overflow:hidden;
+    box-shadow: 0px 0px 1px black;
+  }
+
+
+  .portfoliocard1:hover{
+    background-color: #4F4F4F;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.2s;
+    overflow:hidden;
+    box-shadow: 0px 0px 30px black;
+
+  }
+
+
+  .portfolio-text{
+    font-size: 24px;
+    margin:10px 20px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Comico', cursive;
+  }
+
+  .portfolio-subtext{
+    font-size: 16px;
+    margin:10px 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .iconlist{
+    text-align: center;
+  }
+
+  .iconlist1{
+      display: inline-block;
+      margin:10px 0 20px 0;
+
+  }
+
+  .icon{
+    width:50px;
+    height:50px;
+    margin:0 10px;
+  }
+
+  .overall-numbers{
+    display: inline-block;
+    margin: 30px auto 0px;
+
+  }
+
+  .numbers-list1{
+    height:auto;
+    padding:5px 20px;
+    width: 190px;
+    text-align: center;
+    float: left;
+    position: relative;
+    margin:20px 0px 20px 0;
+    /* border: 1px solid #f6f6f6; */
+    background-color:#58287F;
+    border-radius: 0px;
+  }
+
+  .numbers-list1:nth-child(odd) {
+
+  }
+
+
+  .list1{
+    font-size: 24px;
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+    margin:20px 0 10px 0;
+    letter-spacing: 0px;
+    color:#ff7ab1;
+  }
+
+  .list1-description{
+    color:white;
+    letter-spacing: 3px;
+
+  }
+
+
+  /* portfoliodisplay
+  */
+
+  .UX-banner{
+    width:100%;
+    height:auto;
+  }
+
+  .copyright{
+    margin:20px auto 20px auto;
+    font-size:10px;
+    text-align: center;
+    z-index: 0;
+  }
+
+  .iconpack{
+    text-align: center;
+  }
+
+  .iconcategory{
+    width:100px;
+    height: 100px;
+    padding:20px;
+    margin-right: 20px;
+    border-radius: 100px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background-color: black;
+  }
+
+  .iconcategory:hover{
+    transform: rotateY(180deg);
+  }
+
+  .iconimages{
+    height: 40px;
+  }
+
+  .iconimages img{
+    height: 40px;
+  }
+
+  /* portfolio section Motoori*/
+  .sectionport{
+    width:100%;
+    height:auto;
+    margin:20px 0;
+    font-family: 'Satoshi', sans-serif;
+  }
+
+  .containerport{
+    padding:20px;
+    background-color:#2d2d2d;
+    width: 90%;
+    margin: 20px auto 20px auto;
+  }
+
+  .head1{
+    color:red;
+    font-size:24px;
+    font-weight:bolder;
+  }
+
+  .head2{
+    color:white;
+    font-size:24px;
+    font-weight:bolder;
+  }
+
+  .subhead1{
+    color:white;
+    font-size: 16px;
+  }
+
+  .subimage{
+    width:100%;
+    margin-top: 10px;
+    height:auto;
+  }
+
+  li{
+    color:white;
+    margin:10px 0;
+    text-align: left;
+  }
+
+  p{
+    color:white;
+  }
+
+  /* portfolio section emPartner*/
+  .sectionportem{
+    width:100%;
+    height:auto;
+    margin:20px 0;
+    font-family: 'Satoshi', sans-serif;
+  }
+
+  .containerportem{
+    padding:20px;
+    background-color:#2d2d2d;
+    width: 90%;
+    margin: 20px auto 20px auto;
+  }
+
+  .head1em{
+    color:#0070D2;
+    font-size:24px;
+    font-weight:bolder;
+  }
+
+  .head2em{
+    color:white;
+    font-size:24px;
+    font-weight:bolder;
+  }
+
+  .subhead1em{
+    color:white;
+    font-size: 19px;
+  }
+
+  .subimageem{
+    width:50%;
+    margin-top: 10px;
+    height:auto;
+  }
+
+  .containerportem li{
+    color:white;
+    margin:10px 0;
+    text-align: left;
+    list-style: none;
+  }
+
+  p{
+    color:white;
+  }
+
+  .partnerimg{
+    width:100%;
+    height:auto;
+    display:inline-block;
+    position:relative;
+  }
+
+
+  .titleem{
+    font-size:24px;
+    font-weight:bolder;
+    width: 60%;
+    margin:0 0 0 0;
+    display: inline-block;
+    position: relative;
+    height: auto;
+  }
+
+  .subtitleem{
+    width:50%;
+    font-size:16px;
+    line-height: 20px;
+  }
+
+
+  .containerem{
+    width:100%;
+    height: auto;
+    margin: 0 auto 0 auto;
+    display:inline-flex;
+    align-items: center;
+  }
+
+  .container1em{
+    width: 50%;
+    display:inline-block;
+    margin-top:20px;
+  }
+
+  .container2em{
+    width: 50%;
+    display:inline-block;
+  }
+
+  .container3em{
+    width: 50%;
+    display:inline-block;
+    margin-top:20px;
+    padding-right: 30px;
+    text-align: -webkit-right;
+  }
+
+  .container4em{
+    width: 50%;
+    display:inline-block;
+    text-align: -webkit-right;
+    padding-right: 50px;
+  }
+
+
+  /* portfolio section eMudhra app*/
+  .sectionportemu{
+    width:100%;
+    height:auto;
+    margin:20px 0;
+    background-color: white;
+    font-family: 'Clash Grotesk', sans-serif;
+  }
+
+  .containerportemu{
+    padding:20px;
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+
+  .head1emu{
+    background:linear-gradient(to right, black , #F36F24);
+    font-size:24px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:bolder;
+  }
+
+  .head2emu{
+    background:linear-gradient(to right, #F36F24 , black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:black;
+    font-size:24px;
+    font-weight:bolder;
+  }
+
+  .subhead1emu{
+    color:black;
+    font-size: 19px;
+  }
+
+  .subimageemu{
+    width:50%;
+    margin-top: 10px;
+    height:auto;
+  }
+
+  .containerportemu li{
+    color:black;
+    margin:10px 0;
+    text-align: left;
+    list-style: none;
+  }
+
+  p{
+    color:black;
+  }
+
+  .emudhraimg{
+    width:100%;
+    height:auto;
+    display:inline-block;
+    position:relative;
+  }
+
+
+  .titleemu{
+    font-size:24px;
+    background:linear-gradient(to right, black , #F36F24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:bolder;
+    font-weight:bolder;
+    width: 60%;
+    margin:0 0 0 0;
+    display: inline-block;
+    position: relative;
+    height: auto;
+  }
+
+  .subtitleemu{
+    width:50%;
+    font-size:16px;
+    line-height: 20px;
+    color:black;
+  }
+
+
+  .containeremu{
+    height: auto;
+    margin: 0 auto 0 auto;
+    display:inline-flex;
+    align-items: center;
+  }
+
+  .container1emu{
+    width: 50%;
+    display:inline-block;
+    margin-top:20px;
+  }
+
+  .container2emu{
+    width: 50%;
+    display:inline-block;
+  }
+
+  .container3emu{
+    width: 50%;
+    display:inline-block;
+    margin-top:20px;
+    padding-right: 30px;
+    text-align: -webkit-right;
+  }
+
+  .container4emu{
+    width: 50%;
+    display:inline-block;
+    text-align: -webkit-right;
+    padding-right: 50px;
+  }
+
+
+
+
+
+
+
+  /* portfolio section bridPic*/
+  .sectionportw{
+    width:100%;
+    height:auto;
+    background-color:white;
+    padding:10px 0;
+    font-family: 'Clash Grotesk', sans-serif;
+  }
+
+  .containerportw{
+    margin:0 auto 0 auto;
+    padding:20px 0px;
+    width: 90%;
+    margin: 20px auto 20px auto;
+  }
+
+  .head1w{
+    color:black;
+    font-size:24px;
+    font-weight:bolder;
+  }
+
+  .head2w{
+    color:black;
+    font-size:24px;
+    font-weight:bolder;
+  }
+
+  .subhead1w{
+    color:black;
+    font-size: 16px;
+  }
+
+  .subimagew{
+    width:80%;
+    margin-top: 20px;
+    height:auto;
+  }
+
+  li{
+    color:white;
+    margin:10px 0;
+    text-align: left;
+  }
+
+  .role{
+    color:black;
+    display:inline-block;
+  }
+
+  .role1{
+    display:inline-block;
+
+  }
+
+  .role2{
+    display:inline-block;
+  }
+
+  .role1list{
+    color:black;
+    list-style-type: circle;
+  }
+
+  .role2list{
+    color:black;
+    list-style-type: circle;
+    margin-left:40px;
+
+  }
+
+  .duration{
+    color:black;
+    display:inline-block;
+    margin-bottom:30px;
+    margin-right: 20px;
+  }
+
+  .duration1{
+    display:inline-block;
+
+  }
+
+  .duration2{
+    display:inline-block;
+    margin-left:20px;
+  }
+
+
+
+  .durationno{
+    color:#FD6DDE;
+    font-weight: bolder;
+    font-size: 48px;
+    margin:0;
+  }
+
+  .durationtitle{
+    color:black;
+    font-weight: normal;
+    font-size: 24px;
+    margin:0;
+  }
+
+
+  /* portfolio section Donate*/
+  .sectionportd{
+    width:100%;
+    height:auto;
+    background-color:white;
+    padding:10px 0;
+    font-family: 'Switzer', sans-serif;
+  }
+
+  .containerportd{
+    padding:0px;
+    width: 90%;
+    margin:20px auto;
+  }
+
+  .head1d{
+    color:#002E57;
+    font-size:24px;
+    font-weight:bolder;
+  }
+
+  .head2d{
+    color:black;
+    font-size:24px;
+    font-weight:normal;
+  }
+
+  .subhead1d{
+    color:black;
+    font-size: 16px;
+  }
+
+  .subimaged{
+    width:80%;
+    margin-top: 20px;
+    height:auto;
+  }
+
+  .donateimg{
+    width:80%;
+    height:auto;
+    display:inline-block;
+    position:relative;
+  }
+
+
+  .titled{
+    color:black;
+    font-size:16px;
+    font-weight:bold;
+    margin:0 0 0 0;
+  }
+
+  .subtitled{
+    color:black;
+    width:70%;
+    font-size:16px;
+    font-weight:normal;
+    display:inline-block;
+    line-height: 30px;
+  }
+
+
+  .containerd{
+    width:100%;
+    height: auto;
+    margin: 0 auto 0 auto;
+    display:inline-block;
+
+  }
+  .container1d{
+    width: 50%;
+    display:inline-block;
+    margin-top:20px;
+
+  }
+
+  .container2d{
+    width: 30%;
+    display:inline-flex;
+  }
+
+
+  .durationnod{
+    color:#002E57;
+    font-weight: bolder;
+    font-size: 48px;
+    margin:0;
+  }
+
+  .durationtitled{
+    color:black;
+    font-weight: normal;
+    font-size: 24px;
+    margin:0;
+  }
+
+  .duration1d{
+    display:inline-block;
+
+  }
+
+  .duration2d{
+    display:inline-block;
+    margin-left:50px;
+  }
+
+  .duration3d{
+    display:inline-block;
+    margin-left:50px;
+  }
+
+  .qualitate{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+  }
+
+  .qualicontaind1{
+    width:100px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .qualicontaind2{
+    position: relative;
+    display: inline-block;
+    margin-left:30px;
+  }
+
+  .qualitateimage{
+    width:100%;
+    height: auto;
+  }
+
+  .qualitatetext{
+    color:black;
+    list-style-type: circle;
+  }
+
+  .quantitateimage{
+    width:70%;
+    height: auto;
+  }
+
+  .personad{
+    width: 100%;
+
+  }
+
+  .styled{
+    width:80%;
+  }
+
+
+  .downloadresume a{
+    padding:10px 30px;
+    display: inline-block;
+    color:black;
+    border: 2px solid black;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+  }
+
+  .external{
+    width: 18px;
+    height: auto;
+    position: relative;
+    top:5px;
+    left:5px;
+  }
+
+  /* Viewport */
+  @media screen and (min-width:360px)and (max-width:539px){
+
+    .sidebar {
+      padding-top:15px;
+      padding-left: 0px;
+      width:100%;
+      height: auto;
+      position: fixed;
+      text-align: center;
+      z-index: 100;
+      animation-name: sidebar_m;
+      animation-duration: 1s;
+    }
+
+    .menudiv{
+      left:0;
+    }
+
+    #loader {
+      margin: -20px;
+    }
+
+    @keyframes sidebar_m {
+      0%  {top:-100px;}
+      100% {top:0px;}
+    }
+
+    .logodiv{
+      padding:0px;
+      width: 100%;
+      margin:0 auto 10px auto;
+    }
+
+    .sidebar a {
+      display: inline-block;
+      height: auto;
+      padding:15px;
+      text-decoration: none;
+      font-size: 12px;
+      position: relative;
+      animation-name:menu_item;
+      animation-duration: 1s;
+      letter-spacing: 2px;
+    }
+
+    .badge{
+      position: relative;
+      bottom:1px;
+    }
+
+    @keyframes menu_item {
+      0%  {top:-200px;}
+      100% {top:0px;}
+    }
+
+
+    .logodiv{
+      position: inline;     \
+      margin: 0 auto 0 auto;
+    }
+
+    .profileimage{
+      width:100px;
+      margin-bottom: 10px;
+    }
+
+    .experience-description{
+      font-size: 18px;
+      text-align: center;
+      margin:0px auto;
+    }
+
+    .logo{
+      width:40px;
+    }
+
+    .workspace{
+      width: 100%;
+      margin:85px auto 0 auto;
+      text-align: center;
+      animation-name: workspace_m;
+      animation-duration: 2s;
+    }
+
+    @keyframes workspace_m{
+      0% {bottom:-100px;}
+      100%{bottom:0px;}
+    }
+
+    #intro{
+      height: auto;
+    }
+
+    .surya{
+      margin:0 0 10px 0;
+      font-weight:bold;
+      font-size:34px;
+    }
+
+    .portfolio{
+      width:80%;
+      margin: 20px auto;
+      display: inline;
+      align-items: center;
+    }
+
+    .portimage{
+      width: 80%;
+      overflow:hidden;
+    }
+
+    .portsummary{
+      width: 80%;
+      margin:10px 0;
+    }
+
+
+    .image{
+      width:300px;
+      margin-bottom:0;
+      height:auto;
+      border-radius:20px;
+    }
+
+
+    .portfoliodesigns {
+      width:80%;
+      margin:0 auto 10px auto;
+    }
+
+    .video{
+      width:360px;
+      height:250px;
+      margin:0 auto 0 auto;
+    }
+
+    .iconpack{
+      text-align: center;
+      margin: 0 auto 0 auto;
+      width: 80%;
+    }
+
+    .iconlist{
+      width:80%;
+      margin: 10px auto;
+    }
+
+    .iconlist1{
+    }
+
+    .icon{
+      width:50px;
+      height:50px;
+      margin:10px 30px;
+    }
+
+    .bannerimages{
+      width:100%;
+      height: auto;
+    }
+
+    .UX-banner{
+      width:100%;
+      height:auto;
+    }
+
+
+    .button-interaction{
+      margin:30px auto 30px auto;
+    }
+
+    .figma{
+      width:360px;
+      height:600px;
+      width: 100%;
+      margin:0 auto;
+    }
+
+    .copyright{
+      width: 80%;
+      margin:20px auto 20px auto;
+      font:12px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+
+
+    /* portfolio section black */
+    .sectionport{
+      width: 100%;
+      margin:0;
+      font-family: 'Satoshi', sans-serif;
+    }
+
+    .containerport{
+      background-color:#2d2d2d;
+      width: 80%;
+      padding:20px;
+      text-align: left;
+    }
+
+
+    .subhead1{
+      color:white;
+      font-size: 12px;
+    }
+
+    .head1{
+      font-size: 16px;
+    }
+
+    .head2{
+      font-size: 16px;
+    }
+
+    .subimage{
+      height:auto;
+      margin-top:10px;
+    }
+
+    li{
+      text-align: left;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      font-size: 12px;
+      color:white;
+    }
+
+    p{
+      color:white;
+    }
+
+
+
+    /* portfolio section white */
+    .sectionportw{
+      width: 100%;
+      margin:0;
+      font-family: 'Clash Grotesk', sans-serif;
+    }
+
+    .containerportw{
+      width: 80%;
+      padding:20px;
+      text-align: left;
+    }
+
+
+    .subhead1w{
+      color:black;
+      font-size: 12px;
+    }
+
+    .head1w{
+      font-size: 16px;
+    }
+
+    .head2w{
+      font-size: 16px;
+    }
+
+    .subimagew{
+      height:auto;
+      margin-top:10px;
+    }
+
+    li{
+      text-align: left;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      font-size: 12px;
+    }
+
+
+
+    /* portfolio section Donate*/
+    .sectionportd{
+      width:100%;
+      height:auto;
+      background-color:white;
+      padding:10px 0;
+      font-family: 'Switzer', sans-serif;
+    }
+
+    .containerportd{
+      margin: 20px auto 20px auto;
+      width: 80%;
+      padding:20px 0px;
+      text-align: left;
+    }
+
+    .head1d{
+      color:#002E57;
+      font-size:16px;
+      font-weight:bolder;
+    }
+
+    .head2d{
+      color:black;
+      font-size:18px;
+      font-weight:normal;
+    }
+
+    .subhead1d{
+      color:black;
+      font-size: 12px;
+    }
+
+    .subimaged{
+      width:80%;
+      margin-top: 20px;
+      height:auto;
+    }
+
+    .titled{
+      font-size:16px;
+      margin:10px 0 0 0;
+    }
+
+    .subtitled{
+      font-size:12px;
+      line-height: 20px;
+      margin-bottom:30px;
+      width: 100%;
+    }
+
+    .durationnod{
+      font-size: 24px;
+    }
+
+    .duration3d{
+      margin:0px;
+      margin-top:10px;
+    }
+
+    .containerd{
+      width:100%;
+      height: auto;
+      display:block;
+
+    }
+    .container1d{
+      width:100%;
+      height: auto;
+      text-align: left;
+      margin-top:20px;
+      font-size: 12px;
+
+    }
+
+    .container2d{
+      width:100%;
+      height:auto;
+      text-align: center;
+      margin-left:none;
+    }
+
+    .donateimg{
+      width:50%;
+      height:auto;
+      display:inline-block;
+      position:relative;
+    }
+
+    .role2{
+      display:inline-block;
+      margin-left:0px;
+    }
+
+    .role2list{
+      margin-left:0px;
+    }
+
+    .qualicontaind1{
+      display:none;
+    }
+
+    .qualicontaind2{
+      margin-left:0px;
+    }
+
+    .quantitateimage1{
+      width:100%;
+      height: auto;
+    }
+
+    .styled1{
+      width:100%;
+    }
+
+    .hidden{
+      opacity:0;
+      transition: all 2s;
+      filter: blur(10px);
+      transform: translateY(100px);
+    }
+
+    .show{
+      opacity:1;
+      filter: blur(0px);
+      transform: translateX(0);
+      margin:20px 0;
+    }
+
+    .downloadresume a{
+      border:2px solid black;
+      text-align: center;
+    }
+
+    .downloadresume{
+    }
+
+    ul.breadcrumb {
+      display: none;
+    }
+
+    /* portfolio section emPartner*/
+    .sectionportem{
+      width:100%;
+      height:auto;
+      margin:20px 0;
+      font-family: 'Satoshi', sans-serif;
+    }
+
+    .containerportem{
+      padding:20px;
+      background-color:#2d2d2d;
+      width: 90%;
+      margin: 20px auto 20px auto;
+    }
+
+    .head1em{
+      color:#0070D2;
+      font-size:24px;
+      font-weight:bolder;
+    }
+
+    .head2em{
+      color:white;
+      font-size:18px;
+      font-weight:bolder;
+    }
+
+    .subhead1em{
+      color:white;
+      font-size: 12px;
+    }
+
+    .subimageem{
+      width:80%;
+      margin-top: 10px;
+      height:auto;
+    }
+
+    .containerportem li{
+      color:white;
+      margin:10px 0;
+      text-align: center;
+      list-style: none;
+    }
+
+    p{
+      color:white;
+    }
+
+    .partnerimg{
+      width:100%;
+      height:auto;
+      display:inline-block;
+      position:relative;
+    }
+
+
+    .titleem{
+      font-size:16px;
+      font-weight:bolder;
+      width: 90%;
+      margin:0 0 0 0;
+      display: inline-block;
+      position: relative;
+      height: auto;
+    }
+
+    .subtitleem{
+      width:90%;
+      font-size:12px;
+      line-height: 20px;
+    }
+
+
+    .containerem{
+      height: auto;
+      margin: 0 auto 0 auto;
+      display:inline-flex;
+      align-items: center;
+    }
+
+    .container1em{
+      width: 50%;
+      margin-top:20px;
+    }
+
+    .container2em{
+      width: 50%;
+      margin-left:20px;
+      text-align: left;
+    }
+
+    .container3em{
+      text-align: -webkit-right;
+    }
+
+    .container4em{
+      width: 50%;
+      text-align: -webkit-right;
+    }
+
+    /* portfolio section eMudhra app*/
+    .sectionportemu{
+      width:100%;
+      height:auto;
+      margin:20px 0;
+      background-color: white;
+      font-family: 'Clash Grotesk', sans-serif;
+    }
+
+    .containerportemu{
+      padding: 10px 20px;
+      width: 90%;
+      margin: 0 auto 0 auto;
+    }
+
+    .head1emu{
+      background:linear-gradient(to right, black , #F36F24);
+      font-size:18px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight:bolder;
+    }
+
+    .head2emu{
+      background:linear-gradient(to right, #F36F24 , black);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color:black;
+      font-size:18px;
+      font-weight:bolder;
+    }
+
+    .subhead1emu{
+      color:black;
+      font-size: 16px;
+    }
+
+    .subimageemu{
+      width:50%;
+      margin-top: 10px;
+      height:auto;
+    }
+
+    .containerportemu li{
+      color:black;
+      margin:10px 0;
+      text-align: center;
+      list-style: none;
+    }
+
+    p{
+      color:black;
+    }
+
+    .emudhraimg{
+      width:100%;
+      height:auto;
+      display:inline-block;
+      position:relative;
+    }
+
+
+    .titleemu{
+      font-size:16px;
+      width:90%;
+    }
+
+    .subtitleemu{
+      width:90%;
+      line-height: 15px;
+      font-size:10px;
+      margin-top:0px;
+    }
+
+
+    .containeremu{
+      width:100%;
+      height: auto;
+      margin: 0 auto 0 auto;
+      display:inline-flex;
+      align-items: center;
+    }
+
+    .container1emu{
+      text-align: left;
+
+    }
+
+    .container2emu{
+      text-align: left;
+
+    }
+
+    .container3emu{
+      width: 80%;
+      display:inline-block;
+      margin-top:20px;
+      text-align: -webkit-right;
+    }
+
+    .container4emu{
+      padding-right: 20px;
+
+    }
+
+
+
+  }
+
+
+
+
+  /* Viewport */
+  @media screen and (min-width:540px)and (max-width:800px){
+    .sidebar {
+      width:100%;
+      height: auto;
+      position: fixed;
+      text-align: center;
+      z-index:100;
+      animation-name: sidebar_t;
+      animation-duration: 1s;
+      display: block;
+    }
+
+    .profilesummary{
+      margin:0 auto 20px auto;
+    }
+
+    .summary{
+
+    }
+
+    .logodiv{
+
+    }
+
+    .menudiv{
+      left:0;
+    }
+
+
+    #loader{
+      margin: -20px;
+    }
+
+    @keyframes animatebottom {
+      from{ top:-100px; opacity:0}
+      to{ top:0; opacity:1 }
+    }
+
+    @keyframes sidebar_t {
+      0%  {top:-100px;}
+      100% {top:0px;}
+    }
+
+    .sidebar a {
+      display: inline-block;
+      height: auto;
+      padding:16px 20px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 12px;
+      margin:0px 10px;
+      letter-spacing: 2px;
+      position: relative;
+
+    }
+
+    .workspace{
+      width: 100%;
+      margin:100px auto 0 auto;
+      text-align: center;
+      animation-duration:1s;
+    }
+
+
+    @keyframes box {
+      0%   {left:-100px;}
+      100% {left:0px;}
+    }
+
+
+    .logodiv{
+      text-align: center;
+      width: 100%;
+      padding: 0px;
+      margin: 0 auto 0 auto;
+    }
+
+    .logo{
+      width:40px;
+      text-align: center;
+    }
+
+    .profileimage{
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .experience-description{
+      font-size: 18px;
+      text-align: center;
+      margin:0px auto;
+    }
+
+
+    .portfolio{
+      width:80%;
+      margin: 20px auto;
+      display: inline;
+      align-items: center;
+    }
+
+    .portimage{
+      width: 80%;
+      overflow:hidden;
+    }
+
+    .portsummary{
+      width: 80%;
+    }
+
+    .iconlist1{
+      margin:10px auto;
+      display:inline;
+    }
+
+    .icon{
+      width:50px;
+      height:50px;
+      margin:0 5px;
+    }
+
+    a.portfoliocard1 {
+      margin-bottom:10px;
+      box-shadow: 0px 0px 1px white;
+    }
+
+    .overall-numbers{
+      margin:30px auto;
+    }
+
+
+    .UX-banner{
+      width:100%;
+      height:auto;
+      margin:0px;
+    }
+
+    .bannerimages{
+      width:80%;
+      height: auto;
+    }
+
+    #intro{
+      width:80%;
+      margin:0px auto;
+    }
+
+    .surya{
+      font-size:33px;
+      margin:20px 0 0 0;
+    }
+
+    .button-interaction{
+      width: 60%;
+      margin:30px auto 10px auto;
+    }
+
+    .figma{
+      width:360px;
+      height:600px;
+      width: 100%;
+      margin:0 auto;
+    }
+
+    .copyright{
+
+    }
+
+    .video{
+      width:540px;
+      height:390px;
+      margin:0 auto 0 auto;
+    }
+
+
+    /* portfolio section black */
+    .sectionport{
+      width: 100%;
+      margin:0;
+      font-family: 'Satoshi', sans-serif;
+    }
+
+    .containerport{
+      width: 80%;
+      text-align: left;
+      padding:20px;
+
+    }
+
+
+    .subhead1{
+      color:white;
+      font-size: 12px;
+    }
+
+    .head1{
+      font-size: 24px;
+    }
+
+    .head2{
+      font-size: 24px;
+    }
+
+    .subimage{
+      height:auto;
+      margin-top:10px;
+    }
+
+    li{
+      text-align: left;
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-size: 12px;
+      color:white;
+
+    }
+
+    p{
+      color:white;
+    }
+
+
+    /* portfolio section white */
+    .sectionportw{
+      width: 100%;
+      margin:0;
+      padding:0;
+      font-family: 'Clash Grotesk', sans-serif;
+    }
+
+    .containerportw{
+      width: 80%;
+      text-align: left;
+      padding:20px;
+
+    }
+
+
+    .subhead1w{
+      color:black;
+      font-size: 12px;
+    }
+
+    .head1w{
+      font-size: 16px;
+    }
+
+    .head2w{
+      font-size: 16px;
+    }
+
+    .subimagew{
+      height:auto;
+      margin-top:10px;
+    }
+
+    li{
+      text-align: left;
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-size: 12px;
+    }
+
+    /* portfolio section Donate*/
+    .sectionportd{
+      width:100%;
+      height:auto;
+      background-color:white;
+      padding:10px 0;
+      font-family: 'Switzer', sans-serif;
+    }
+
+    .containerportd{
+      margin: 20px auto 20px auto;
+      width: 80%;
+      padding:20px 0px;
+      text-align: left;
+    }
+
+    .head1d{
+      color:#002E57;
+      font-size:16px;
+      font-weight:bolder;
+    }
+
+    .head2d{
+      color:black;
+      font-size:18px;
+      font-weight:normal;
+    }
+
+    .subhead1d{
+      color:black;
+      font-size: 12px;
+    }
+
+    .subimaged{
+      width:50%;
+      margin-top: 20px;
+      height:auto;
+    }
+
+    .titled{
+      font-size:16px;
+      margin:10px 0 0 0;
+    }
+
+    .subtitled{
+      font-size:12px;
+      width: 100%;
+      line-height: 20px;
+    }
+
+    .containerd{
+      width:100%;
+      height: auto;
+      display:block;
+      text-align: left;
+
+    }
+    .container1d{
+      width:100%;
+      height: auto;
+      text-align: left;
+      margin-top:20px;
+      font-size: 12px;
+
+    }
+
+    .durationnod{
+      font-size: 36px;
+    }
+
+    .container2d{
+      width:90%;
+      height:auto;
+      text-align: left;
+    }
+
+    .donateimg{
+      width:50%;
+      height:auto;
+      display:inline-block;
+      position:relative;
+    }
+
+    .role2{
+      display:inline-block;
+      margin-left:0px;
+    }
+
+    .quantitateimage1{
+      width:100%;
+      height: auto;
+    }
+
+    .styled1{
+      width:100%;
+    }
+    .hidden{
+      opacity:0;
+      transition: all 2s;
+      filter: blur(5px);
+      transform: translateY(100px);
+    }
+
+    .show{
+      opacity:1;
+      filter: blur(0px);
+      transform: translateY(0);
+      margin:20px 0;
+    }
+
+    .downloadresume a{
+      width:80%;
+    }
+    .downloadresume{
+      width:100%;
+      margin: 20px 0;
+    }
+
+    ul.breadcrumb {
+      display: none;
+    }
+
+    /* portfolio section emPartner*/
+    .sectionportem{
+      width:100%;
+      height:auto;
+      margin:20px 0;
+      font-family: 'Satoshi', sans-serif;
+    }
+
+    .containerportem{
+      padding:20px;
+      background-color:#2d2d2d;
+      width: 90%;
+      margin: 20px auto 20px auto;
+    }
+
+    .head1em{
+      color:#0070D2;
+      font-size:24px;
+      font-weight:bolder;
+    }
+
+    .head2em{
+      color:white;
+      font-size:18px;
+      font-weight:bolder;
+    }
+
+    .subhead1em{
+      color:white;
+      font-size: 12px;
+    }
+
+    .subimageem{
+      width:80%;
+      margin-top: 10px;
+      height:auto;
+    }
+
+    .containerportem li{
+      color:white;
+      margin:10px 0;
+      text-align: center;
+      list-style: none;
+      font-size: 14px;
+    }
+
+    p{
+      color:white;
+    }
+
+    .partnerimg{
+      width:100%;
+      height:auto;
+      display:inline-block;
+      position:relative;
+    }
+
+
+    .titleem{
+      font-size:18px;
+      font-weight:bolder;
+      width: 70%;
+      margin:0 0 0 0;
+      display: inline-block;
+      position: relative;
+      height: auto;
+    }
+
+    .subtitleem{
+      width:90%;
+      font-size:14px;
+      line-height: 20px;
+    }
+
+
+    .containerem{
+      height: auto;
+      margin: 0 auto 0 auto;
+      display:inline-flex;
+      align-items: center;
+    }
+
+    .container1em{
+      width: 50%;
+      margin-top:20px;
+    }
+
+    .container2em{
+      width: 50%;
+      margin-left:20px;
+      text-align: left;
+    }
+
+    .container3em{
+      text-align: -webkit-right;
+    }
+
+    .container4em{
+      width: 50%;
+      text-align: -webkit-right;
+    }
+
+    /* portfolio section eMudhra app*/
+    .sectionportemu{
+      width:100%;
+      height:auto;
+      margin:20px 0;
+      background-color: white;
+      font-family: 'Clash Grotesk', sans-serif;
+    }
+
+    .containerportemu{
+      padding:20px;
+      width: 90%;
+      margin: 0 auto 0 auto;
+    }
+
+    .head1emu{
+      background:linear-gradient(to right, black , #F36F24);
+      font-size:24px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight:bolder;
+    }
+
+    .head2emu{
+      background:linear-gradient(to right, #F36F24 , black);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color:black;
+      font-size:24px;
+      font-weight:bolder;
+    }
+
+    .subhead1emu{
+      color:black;
+      font-size: 16px;
+    }
+
+    .subimageemu{
+      width:50%;
+      margin-top: 10px;
+      height:auto;
+    }
+
+    .containerportemu li{
+      color:black;
+      margin:10px 0;
+      text-align: center;
+      list-style: none;
+    }
+
+    p{
+      color:black;
+    }
+
+    .emudhraimg{
+      width:100%;
+      height:auto;
+      display:inline-block;
+      position:relative;
+    }
+
+
+    .titleemu{
+      font-size:16px;
+    }
+
+    .subtitleemu{
+      font-size:12px;
+    }
+
+
+    .containeremu{
+      width:100%;
+      height: auto;
+      margin: 0 auto 0 auto;
+      display:inline-flex;
+      align-items: center;
+    }
+
+    .container1emu{
+      text-align: left;
+
+    }
+
+    .container2emu{
+      text-align: left;
+
+    }
+
+    .container3emu{
+      width: 50%;
+      display:inline-block;
+      margin-top:20px;
+      padding-right: 30px;
+      text-align: -webkit-right;
+    }
+
+    .container4emu{
+      width: 50%;
+      display:inline-block;
+      text-align: -webkit-right;
+      padding-right: 50px;
+    }
+
+
+  }
+
+
+
+
+  @media screen and (min-width:396px)and (max-width:540px){
+
+    .logodiv{
+      width:100%;
+      height: auto;
+      margin: 0 auto 0 auto;
+    }
+
+    .logo{
+      width:40px;
+    }
+
+
+  }
