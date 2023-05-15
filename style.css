@@ -1197,7 +1197,7 @@ a:active{
 
 
     .image{
-      width:300px;
+      width:100%;
       margin-bottom:0;
       height:auto;
       border-radius:20px;
@@ -1795,6 +1795,13 @@ a:active{
     .profileimage{
       width: 100px;
       margin-bottom: 10px;
+    }
+
+    .image{
+      width:100%;
+      margin-bottom:0;
+      height:auto;
+      border-radius:20px;
     }
 
     .experience-description{
