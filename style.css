@@ -9,7 +9,23 @@ body{
   font-family: 'Britney', cursive;
   font-family: 'Comico', cursive;
   font-family: 'Quicksand', sans-serif;
-  background-color: #ffffff;
+  background: linear-gradient(-45deg, #ffffff, #dfdfdf, #fdfdfd, #afafaf);
+	background-size: 200% 200%;
+	animation: gradient 10s ease-in infinite;
+	height: 200vh;
+  z-index: -1;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
