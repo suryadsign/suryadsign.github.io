@@ -1202,6 +1202,7 @@ a:active{
       margin-bottom:0;
       height:auto;
       border-radius:20px;
+      padding: 10px 0;
     }
 
 
@@ -1803,6 +1804,8 @@ a:active{
       margin-bottom:0;
       height:auto;
       border-radius:20px;
+      padding: 10px 0;
+
     }
 
     .experience-description{
