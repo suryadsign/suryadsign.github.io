@@ -10,10 +10,10 @@ body{
   font-family: 'Comico', cursive;
   font-family: 'Quicksand', sans-serif;
   background: linear-gradient(-45deg, #ffffff, #dfdfdf, #fdfdfd, #afafaf);
+	z-index: -1;
 	background-size: 200% 200%;
 	animation: gradient 10s ease-in infinite;
-	height: 200vh;
-  z-index: -1;
+	height: auto;
 }
 
 @keyframes gradient {
