@@ -81,7 +81,8 @@ body{
 }
 
 .alien{
-  margin-top: 30px;
+  width: 80%;
+  margin: 30px auto;
 }
 
 
@@ -512,7 +513,7 @@ a:active{
   }
 
   .iconimages{
-    height: 40px;
+    height: 100px;
   }
 
   .iconimages img{
