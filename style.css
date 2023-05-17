@@ -9,11 +9,7 @@ body{
   font-family: 'Britney', cursive;
   font-family: 'Comico', cursive;
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(-45deg, #ffffff, #dfdfdf, #fdfdfd, #afafaf);
-	z-index: -1;
-	background-size: 200% 200%;
-	animation: gradient 10s ease-in infinite;
-	height: auto;
+  background-color: #ffffff;
 }
 
 @keyframes gradient {
@@ -960,7 +956,7 @@ a:active{
   }
 
   .donateimg{
-    width:80%;
+    width:60%;
     height:auto;
     display:inline-block;
     position:relative;
@@ -988,7 +984,7 @@ a:active{
     width:100%;
     height: auto;
     margin: 0 auto 0 auto;
-    display:inline-block;
+    display:inline-flex;
 
   }
   .container1d{
