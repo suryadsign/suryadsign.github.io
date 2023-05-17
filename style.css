@@ -705,7 +705,7 @@ a:active{
   }
 
   .head1emu{
-    background:linear-gradient(to right, black , #F36F24);
+    background:#F36F24;
     font-size:24px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -713,10 +713,9 @@ a:active{
   }
 
   .head2emu{
-    background:linear-gradient(to right, #F36F24 , black);
+    color:#F36F24;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color:black;
     font-size:24px;
     font-weight:bolder;
   }
@@ -1627,7 +1626,8 @@ a:active{
     }
 
     .head1emu{
-      background:linear-gradient(to right, black , #F36F24);
+      /* background:linear-gradient(to right, black , #F36F24); */
+      background:#F36F24;
       font-size:18px;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -1635,7 +1635,8 @@ a:active{
     }
 
     .head2emu{
-      background:linear-gradient(to right, #F36F24 , black);
+      /* background:linear-gradient(to right, #F36F24 , black); */
+      background:#F36F24;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       color:black;
@@ -2236,7 +2237,8 @@ a:active{
     }
 
     .head1emu{
-      background:linear-gradient(to right, black , #F36F24);
+      /* background:linear-gradient(to right, black , #F36F24); */
+      background:#F36F24;
       font-size:24px;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -2244,10 +2246,10 @@ a:active{
     }
 
     .head2emu{
-      background:linear-gradient(to right, #F36F24 , black);
+      /* background:linear-gradient(to right, #F36F24 , black); */
+      background:#F36F24;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      color:black;
       font-size:24px;
       font-weight:bolder;
     }
