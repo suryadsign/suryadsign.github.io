@@ -440,8 +440,7 @@ a:active{
 
   .iconlist1{
       display: inline-block;
-      margin:10px 0 20px 0;
-
+      margin-bottom: 20px;
   }
 
   .icon{
@@ -1158,7 +1157,7 @@ a:active{
     }
 
     .experience-description{
-      font-size: 18px;
+      font-size: 14px;
       text-align: center;
       margin:0px auto;
     }
@@ -1187,7 +1186,7 @@ a:active{
     .surya{
       margin:0 0 10px 0;
       font-weight:bold;
-      font-size:34px;
+      font-size:24px;
     }
 
     .portfolio{
@@ -1236,7 +1235,7 @@ a:active{
 
     .iconlist{
       width:80%;
-      margin: 10px auto;
+      margin: 0px auto;
     }
 
     .iconlist1{
@@ -1245,7 +1244,7 @@ a:active{
     .icon{
       width:50px;
       height:50px;
-      margin:10px 30px;
+      margin:0 5px 20px 5px;
     }
 
     .bannerimages{
@@ -1738,7 +1737,7 @@ a:active{
     }
 
     .profilesummary{
-      margin:0 auto 20px auto;
+      margin:0 auto 0px auto;
     }
 
     .summary{
@@ -1882,8 +1881,8 @@ a:active{
     }
 
     .surya{
-      font-size:33px;
-      margin:20px 0 0 0;
+      font-size:28px;
+      margin:0px;
     }
 
     .button-interaction{
@@ -2108,7 +2107,7 @@ a:active{
     }
 
     .downloadresume a{
-      width:80%;
+      width:50%;
     }
     .downloadresume{
       width:100%;
