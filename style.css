@@ -1740,6 +1740,7 @@ a:active{
 
     .profilesummary{
       margin:0 auto 0px auto;
+      display: inline-block;
     }
 
     .summary{
@@ -1809,8 +1810,14 @@ a:active{
     }
 
     .profileimage{
-      width: 100px;
+      width: 140px;
       margin-bottom: 10px;
+    }
+
+    .iconlist{
+    text-align: center;
+    margin-top:20px;
+    margin-left: 0px;
     }
 
     .image{
@@ -1880,6 +1887,7 @@ a:active{
     #intro{
       width:80%;
       margin:0px auto;
+      padding:5px 0;
     }
 
     .surya{
@@ -1900,7 +1908,7 @@ a:active{
     }
 
     .copyright{
-
+      margin-bottom: 0px;
     }
 
     .video{
@@ -2109,7 +2117,7 @@ a:active{
     }
 
     .downloadresume a{
-      width:50%;
+      width:65%;
     }
     .downloadresume{
       width:100%;
