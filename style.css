@@ -281,22 +281,22 @@ a:active{
   }
 
   .profileimage{
-    width:120px;
+    width:240px;
     height: auto;
     display: inline-block;
-    border-radius: 50%;
-
+    border-radius: 10px;
   }
 
   .profilesummary{
     width:80%;
     margin: 0px auto;
     text-align: center;
+    display: inline-flex;
   }
 
   .experience-description{
-    font-size: 24px;
-    text-align: center;
+    font-size: 18px;
+    text-align: left;
     margin:0px auto;
   }
 
@@ -315,7 +315,7 @@ a:active{
   #intro{
     margin-top:60px;
     height: auto;
-    padding:10px;
+    padding:30px;
     width:80%;
     margin:0 auto;
     text-align: center;
@@ -435,7 +435,8 @@ a:active{
   }
 
   .iconlist{
-    text-align: center;
+    text-align: left;
+    margin-left: 40px;
   }
 
   .iconlist1{
@@ -1077,6 +1078,7 @@ a:active{
     color:black;
     border: 2px solid black;
     font-size: 16px;
+    font-weight: bold;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
   }
