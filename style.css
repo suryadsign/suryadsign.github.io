@@ -1154,8 +1154,12 @@ a:active{
     }
 
     .profileimage{
-      width:100px;
+      width:140px;
       margin-bottom: 10px;
+    }
+
+    .profilesummary {
+      display: inline-block;
     }
 
     .experience-description{
@@ -1182,11 +1186,12 @@ a:active{
     }
 
     #intro{
-      height: auto;
+      display: inline-block;
+      padding: 10px;
     }
 
     .surya{
-      margin:0 0 10px 0;
+      margin:0;
       font-weight:bold;
       font-size:24px;
     }
@@ -1236,16 +1241,17 @@ a:active{
     }
 
     .iconlist{
-      width:80%;
       margin: 0px auto;
+      text-align: center;
     }
 
     .iconlist1{
-    }
+margin-bottom: 0px;
+   }
 
     .icon{
-      width:50px;
-      height:50px;
+      width:45px;
+      height:auto;
       margin:0 5px 20px 5px;
     }
 
@@ -1499,15 +1505,7 @@ a:active{
     }
 
     .downloadresume a{
-      border:2px solid black;
-      text-align: center;
-    }
-
-    .downloadresume{
-    }
-
-    ul.breadcrumb {
-      display: none;
+      width: 80%;
     }
 
     /* portfolio section emPartner*/
