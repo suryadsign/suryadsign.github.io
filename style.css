@@ -428,6 +428,7 @@ a:active{
   }
 
   .portfolio-subtext{
+	width:30%;
     font-size: 16px;
     margin:10px 20px;
     line-height: 20px;
@@ -1276,6 +1277,10 @@ margin-bottom: 0px;
       width: 100%;
       margin:0 auto;
     }
+	  
+.portfolio-subtext{
+width:70%;
+  }
 
     .copyright{
       width: 80%;
@@ -2332,6 +2337,11 @@ margin-bottom: 0px;
       text-align: -webkit-right;
       padding-right: 50px;
     }
+
+.portfolio-subtext{
+width:80%;
+  }
+
 
 
   }
