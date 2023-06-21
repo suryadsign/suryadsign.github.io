@@ -281,10 +281,10 @@ a:active{
   }
 
   .profileimage{
-    width:240px;
-    height: auto;
+    width:360px;
+    height: 250px;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 100px;
   }
 
   .profilesummary{
@@ -295,9 +295,11 @@ a:active{
   }
 
   .experience-description{
-    font-size: 18px;
+    font-size: 14px;
+    width:65%;
     text-align: left;
-    margin:0px auto;
+    margin:0px;
+    display: inline-block;
   }
 
   @keyframes workspace{
@@ -346,8 +348,9 @@ a:active{
   .surya{
     margin:10px 0 0 0;
     font-weight:bold;
-    font-size:48px;
+    font-size:30px;
     font-family: 'Comico', cursive;
+    display: inline;
   }
 
   /* Portfolio */
@@ -428,7 +431,7 @@ a:active{
   }
 
   .portfolio-subtext{
-	width:30%;
+	   width:30%;
     font-size: 16px;
     margin:10px 20px;
     line-height: 20px;
@@ -438,17 +441,18 @@ a:active{
   .iconlist{
     text-align: left;
     margin-left: 40px;
+    line-height: 2;
   }
 
   .iconlist1{
       display: inline-block;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
   }
 
   .icon{
-    width:50px;
-    height:50px;
-    margin:0 10px;
+    width:40px;
+    height:auto;
+    margin:10px 5px;
   }
 
   .overall-numbers{
@@ -1074,11 +1078,11 @@ a:active{
 
 
   .downloadresume a{
-    padding:10px 30px;
+    padding:10px 16px;
     display: inline-block;
     color:black;
     border: 2px solid black;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
@@ -1155,7 +1159,7 @@ a:active{
     }
 
     .profileimage{
-      width:140px;
+      width:auto;
       margin-bottom: 10px;
     }
 
@@ -1166,7 +1170,7 @@ a:active{
     .experience-description{
       font-size: 14px;
       text-align: center;
-      margin:0px auto;
+      margin:0px 0 20px 0;
     }
 
     .logo{
@@ -1277,7 +1281,7 @@ margin-bottom: 0px;
       width: 100%;
       margin:0 auto;
     }
-	  
+
 .portfolio-subtext{
 width:70%;
   }
@@ -1813,7 +1817,7 @@ width:70%;
     }
 
     .profileimage{
-      width: 140px;
+      width: auto;
       margin-bottom: 10px;
     }
 
@@ -1835,7 +1839,7 @@ width:70%;
     .experience-description{
       font-size: 18px;
       text-align: center;
-      margin:0px auto;
+      margin:0px 0 20px 0;
     }
 
 
