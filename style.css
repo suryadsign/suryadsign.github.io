@@ -92,6 +92,14 @@ body{
   transition-delay: 200ms;
 }
 
+.worklabel{
+  font-size: 8px;
+  display: inline-grid;
+  background-color: #FFD9B6;
+  padding:2px 3px;
+  margin:0px 20px;
+}
+
 .alien{
   width: 80%;
   margin: 30px auto;
