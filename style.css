@@ -284,11 +284,11 @@ a:active{
     width:360px;
     height: 280px;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10px;
   }
 
   .profilesummary{
-    width:80%;
+    width:90%;
     margin: 0px auto;
     text-align: center;
     display: inline-flex;
@@ -363,11 +363,16 @@ a:active{
   }
 
   .image:hover{
-    transform: scale(105%);
+    transform: scale(95%);
     transition: 1s;
     z-index: -1;
     overflow: hidden;
-    border-radius: 20px;
+  }
+
+  .image1{
+    width:300px;
+    margin-bottom:0;
+    height:auto;
   }
 
   .bannerimages{
@@ -382,6 +387,18 @@ a:active{
     margin: 20px 0;
     display: inline-flex;
     align-items: center;
+  }
+
+  .portfoliocard1{
+    width:300px;
+    height:auto;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin:10px 10px;
+    position: relative;
+    overflow:hidden;
+    box-shadow: 0px 0px 1px black;
   }
 
   .portimage{
@@ -411,12 +428,11 @@ a:active{
 
 
   .portfoliocard1:hover{
-    background-color: #4F4F4F;
     font-weight: bold;
     border-radius: 10px;
     transition: 0.2s;
     overflow:hidden;
-    box-shadow: 0px 0px 30px black;
+    box-shadow: 0px 0px 5px black;
 
   }
 
@@ -431,7 +447,7 @@ a:active{
   }
 
   .portfolio-subtext{
-	   width:30%;
+	   width:50%;
     font-size: 16px;
     margin:10px 20px;
     line-height: 20px;
@@ -504,7 +520,7 @@ a:active{
   }
 
   .copyright{
-    margin:20px auto 20px auto;
+    margin:50px auto 20px auto;
     font-size:10px;
     text-align: center;
     z-index: 0;
@@ -1872,7 +1888,7 @@ width:70%;
 
     a.portfoliocard1 {
       margin-bottom:10px;
-      box-shadow: 0px 0px 1px white;
+      box-shadow: 0px 0px 1px black;
     }
 
     .overall-numbers{
