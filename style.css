@@ -289,8 +289,8 @@ a:active{
   }
 
   .profileimage{
-    width:360px;
-    height: 280px;
+    width:200px;
+    height: auto;
     display: inline-block;
     border-radius: 10px;
   }
@@ -304,7 +304,7 @@ a:active{
 
   .experience-description{
     font-size: 14px;
-    width:65%;
+    width:60%;
     text-align: left;
     margin:0px;
     display: inline-block;
