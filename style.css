@@ -296,20 +296,19 @@ a:active{
   }
 
   .profilesummary{
-    width:83%;
+    width:85%;
     margin: 0px auto;
+    background-color: #F5F5F5;
+    border-radius: 10px;
     text-align: center;
-	  background-color:#F5F5F5;
     display: inline-flex;
-	  border-radius:10px;
   }
 
   .experience-description{
     font-size: 14px;
-    width:60%;
+    width:auto;
     text-align: left;
     margin:0px;
-    display: inline-block;
   }
 
   @keyframes workspace{
@@ -360,7 +359,6 @@ a:active{
     font-weight:bold;
     font-size:30px;
     font-family: 'Comico', cursive;
-    display: inline;
   }
 
   /* Portfolio */
@@ -468,11 +466,11 @@ a:active{
     text-align: left;
     margin-left: 40px;
     line-height: 2;
+    display: block;
   }
 
   .iconlist1{
-      display: inline-block;
-      margin-bottom: 5px;
+
   }
 
   .icon{
@@ -1185,11 +1183,13 @@ a:active{
     }
 
     .profileimage{
-      width:auto;
+      width:200px;
       margin-bottom: 10px;
     }
 
     .profilesummary {
+      width:100%;
+      background-color: white;
       display: inline-block;
     }
 
@@ -1772,6 +1772,8 @@ width:70%;
     }
 
     .profilesummary{
+      width:100%;
+      background-color: white;
       margin:0 auto 0px auto;
       display: inline-block;
     }
@@ -1843,7 +1845,7 @@ width:70%;
     }
 
     .profileimage{
-      width: auto;
+      width: 200px;
       margin-bottom: 10px;
     }
 
