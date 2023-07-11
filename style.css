@@ -427,7 +427,7 @@ a:active{
     padding-bottom: 10px;
     display: inline-block;
     border-radius: 10px;
-    margin:10px 0px;
+    margin:10px 10px;
     position: relative;
     overflow:hidden;
     box-shadow: 0px 0px 1px black;
@@ -1232,9 +1232,7 @@ a:active{
       display: inline;
       align-items: center;
     }
-	.portfoliocard1{
-		margin-left:0px;
-	}
+
 	  
     .portimage{
       width: 80%;
