@@ -1233,7 +1233,10 @@ a:active{
       display: inline;
       align-items: center;
     }
-
+	.portfoliocard1{
+		margin-left:0px;
+	}
+	  
     .portimage{
       width: 80%;
       overflow:hidden;
