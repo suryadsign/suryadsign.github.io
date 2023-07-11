@@ -146,6 +146,7 @@ display: flex;
 
 .logo{
   width:50px;
+border-radius:30px;
 }
 
 
@@ -1198,6 +1199,7 @@ a:active{
 
     .logo{
       width:40px;
+	border-radius:30px;
     }
 
     .workspace{
@@ -1842,6 +1844,9 @@ width:70%;
     .logo{
       width:40px;
       text-align: center;
+	    border-radius:30px;
+	    
+	    
     }
 
     .profileimage{
@@ -2391,6 +2396,7 @@ width:80%;
 
     .logo{
       width:40px;
+	    border-radius:30px;
     }
 
 
