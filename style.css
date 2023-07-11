@@ -296,18 +296,16 @@ a:active{
   }
 
   .profilesummary{
-    width:96%;
     margin: 0px auto;
     background-color: #F5F5F5;
     border-radius: 10px;
-    text-align: center;
-    display: inline-flex;
+	  padding:20px 0;
+    display: inline-block;
   }
 
   .experience-description{
     font-size: 14px;
     width:auto;
-    text-align: left;
     margin:0px;
   }
 
@@ -1108,6 +1106,7 @@ a:active{
     border: 2px solid black;
     font-size: 14px;
     font-weight: bold;
+	  background-color:#ffffff;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
   }
